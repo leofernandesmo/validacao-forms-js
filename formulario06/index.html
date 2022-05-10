@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação e Formatação de Campos</title>
+</head>
+
+<body>
+    <h1>Validação e Formatação de Campos</h1>
+    <form action="#">
+        <label for="nome">Nome: </label>
+        <input type="text" class="nomeClient" placeholder="Apenas letras">
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="example@example.com" />
+        <label for="cpf">CPF: </label>
+        <input type="text" id="campo_cpf" placeholder="Apenas Números" required />
+        <label for="dataNascimento">Data de Nascimento: </label>
+        <input type="date" id="campo_data" />
+        <label>Celular:</label>
+        <input type="text" id="campo_celular" placeholder="Apenas Números" maxlength="11" required />
+        <label>Telefone Fixo:</label>
+        <input type="text" id="campo_fixo" placeholder="Apenas Números" maxlength="10" required />
+        <label>Observação:</label>
+        <textarea type="text" id="campo_observacao" placeholder="Limite de 100 caracteres" maxlength="100"></textarea>
+        <input type="submit">
+    </form>
+</body>
+<script src="js/validacao.js"></script>
+
+</html>
